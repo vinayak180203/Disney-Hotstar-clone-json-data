@@ -1,0 +1,298 @@
+.currentSlide.active {
+    width: 100%;
+}
+
+.slider {
+   position: relative;
+   height: 400px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   overflow: hidden;
+   margin-left: 40px;
+}
+
+.image {
+    height: 300px;
+    margin-top: -1.8rem;
+    width: 100%;
+ }
+
+ .left {
+    position: absolute;
+    transform: translateY(-50%);
+    left: 3rem;
+    top: 50%;
+    font-size: 1rem;
+    color: white;
+    z-index: 5;
+    cursor: pointer;
+    user-select: none;
+ }
+ .right {
+    position: absolute;
+    transform: translateY(-50%);
+    right: 3rem;
+    top: 50%;
+    font-size: 2rem;
+    color: white;
+    z-index: 5;
+    cursor: pointer;
+    user-select: none;
+ }
+ .currentSlide {
+    transition-duration: 0.5s ease;
+    opacity: 0;
+ }
+ .currentSlide.active {
+    opacity: 1;
+    transition-duration: 0.5s;
+    transform: scale(1.2);
+ }
+
+ /* Media queries for responsiveness */
+@media (max-width: 768px) {
+    /* .slider {
+      height: 300px;
+    } */
+  
+    .left,
+    .right {
+      font-size: 0.8rem; /* Adjust the font size for smaller screens */
+    }
+  } 
+
+.categories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category {
+    margin: 0 1.5rem;
+}
+
+.disney {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.marvel {
+    max-width: 320px;
+    max-height: 320px;
+}
+
+.pixar {
+    max-width: 290px;
+    max-height: 290px;
+}
+
+.starwars {
+    max-width: 260px;
+    max-height: 260px;
+}
+
+.natgeo {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.heading {
+    color: white; 
+    margin: 2rem 4rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 1450px) and (max-width: 1800px) {
+    .disney {
+        max-width: 225px;
+        max-height: 225px;
+    }
+    
+    .marvel {
+        max-width: 240px;
+        max-height: 240px;
+    }
+    
+    .pixar {
+        max-width: 217.5px;
+        max-height: 217.5px;
+    }
+    
+    .starwars {
+        max-width: 195px;
+        max-height: 195px;
+    }
+    
+    .natgeo {
+        max-width: 225px;
+        max-height: 225px;
+    }
+  }
+
+@media (min-width: 950px) and (max-width: 1450px) {
+  .disney {
+      max-width: 150px;
+      max-height: 150px;
+  }
+  
+  .marvel {
+      max-width: 160px;
+      max-height: 160px;
+  }
+  
+  .pixar {
+      max-width: 145px;
+      max-height: 145px;
+  }
+  
+  .starwars {
+      max-width: 130px;
+      max-height: 130px;
+  }
+  
+  .natgeo {
+      max-width: 150px;
+      max-height: 150px;
+  }
+    .category{
+        margin: 0 0.4rem;
+    }
+  }
+
+@media (min-width: 640px) and (max-width: 950px) {
+  .disney {
+      max-width: 90px;
+      max-height: 90px;
+  }
+  
+  .marvel {
+      max-width: 96px;
+      max-height: 96px;
+  }
+  
+  .pixar {
+      max-width: 87px;
+      max-height: 87px;
+  }
+  
+  .starwars {
+      max-width: 78px;
+      max-height: 78px;
+  }
+  
+  .natgeo {
+      max-width: 90px;
+      max-height: 90px;
+  }
+  .category{
+    margin: 0 0.4rem;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 640px) {
+    .disney {
+        max-width: 45px;
+        max-height: 45px;
+    }
+    
+    .marvel {
+        max-width: 48px;
+        max-height: 48px;
+    }
+    
+    .pixar {
+        max-width: 43.5px;
+        max-height: 43.5px;
+    }
+    
+    .starwars {
+        max-width: 39px;
+        max-height: 39px;
+    }
+    
+    .natgeo {
+        max-width: 45px;
+        max-height: 45px;
+    }
+    .category{
+      margin: 0 0.4rem;
+      }
+  }
+
+@media (max-width: 420px){
+    .disney {
+        max-width: 30px;
+        max-height: 30px;
+    }
+    
+    .marvel {
+        max-width: 32px;
+        max-height: 32px;
+    }
+    
+    .pixar {
+        max-width: 29px;
+        max-height: 29px;
+    }
+    
+    .starwars {
+        max-width: 26px;
+        max-height: 26px;
+    }
+    
+    .natgeo {
+        max-width: 30px;
+        max-height: 30px;
+    }
+    .category{
+      margin: 0 0.4rem;
+      }
+}
+
+.type {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    /* justify-content: center; */
+}
+
+.type-options {
+    max-height: 177px;   
+    margin: 0 2rem;
+}
+
+@media (min-width: 1200px) and (max-width: 1450px) {
+    .type-options{
+        margin: 0 1rem;
+        max-width: 250px;
+        max-height: 250px;
+    }
+}
+
+@media (min-width: 880px) and (max-width: 1200px) {
+    .type-options{
+        margin: 0 1rem;
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
+
+@media (min-width: 460px) and (max-width: 880px) {
+    .type-options{
+        margin: 0 1rem;
+        max-width: 75px;
+        max-height: 75px;
+    }
+}
+
+@media (max-width: 460px) {
+    .type-options{
+        margin: 0 0.5rem;
+        max-width: 45px;
+        max-height: 45px;
+    }
+}
+

@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800&display=swap');
+
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.special-navbar{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto 0 90px;
+  background-color: #152238;
+}
+
+.special-navbar .links {
+  margin-left: auto;
+}
+
+.special-navbar a {
+  text-decoration: none;
+  padding: 6px;
+}
+
+.special-navbar a:hover {
+  color: #f1356d;
+}
+
+.special-navbar .logo{
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.special-navbar .btn {
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 6px 12px;
+  color: grey;
+  margin-right: 10px;
+}
+
+.navbar {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #152238;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 6px;
+}
+
+.navbar a:hover {
+  color: #f1356d;
+}
+
+.navbar .logo{
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.navbar .btn {
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 6px 12px;
+  color: grey;
+  margin-right: 10px;
+}
+
+.home {
+  background-image: url(../public/login-background.jpg);
+  /* width: 100%; */
+  height: 1350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+.home-content{
+  max-width: 700px;
+  margin: 20rem auto;
+}
+
+.home-content .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-content .icon{
+  flex-basis: 30%;
+}
+
+.home-content .icon-left{
+  max-width: 100px;
+  max-height: 100px;
+  margin: 0 2.5rem 0 0;
+}
+
+.home-content .icon-middle{
+  margin-top: -50px;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.home-content .icon-right{
+  max-width: 150px;
+  max-height: 150px;
+  margin: 0 0 0 2.5rem;
+}
+
+.home-content .button{
+  display: flex;
+  margin-top: 1rem;
+  width: 100%;
+  text-decoration: none;
+
+}
+
+.home-content .button-text{
+  background-color: #0096FF;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 5px;
+  width: 100%;
+  padding: 6px 0 12px 0;
+  border: 1px solid #0096FF;
+  font-family: "Inter";
+}
+
+.home-content .text{
+  margin-top: 0.5rem;
+  color: white;
+  text-align: center;
+  font-family: "Inter";
+}
+
+.home-content .services{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.home-content .service{
+  flex-basis: 30%;
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.home-content .plus{
+  flex-basis: 30%;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.home-content .disney{
+  margin-right: 0;
+}
+
+.home-content .pixar{
+  margin: 0 1.5rem;
+}
+
+.home-content .marvel{
+  max-height: 20px;
+  margin: 0 1.5rem;
+}
+
+.home-content .starwars{
+  max-height: 22px;
+  margin: 0 1.5rem;
+}
+
+.home-content .natgeo{
+  max-height: 22px;
+  margin: 0 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .home-content .icons{
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-content .icon {
+    flex-basis: 100%;
+  }
+  .home-content .icon-left{
+    margin-bottom: 4rem;
+  }
+  .home-content .icon-right{
+    margin-top: 2rem;
+  }
+  .home-content .services{
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-content .pixar{
+    margin: 1rem 0;
+  }
+  .home-content .marvel{
+    margin: 1rem 0;
+  }
+  .home-content .starwars{
+    margin: 1rem 0;
+  }
+  .home-content .natgeo{
+    margin: 1rem 0;
+  }
+  .home-content .plus{
+    margin: 1rem 0;
+  }
+}
+
+.main-content {
+  /* display: flex; */
+  margin-left: 50px;
+  /* padding: 20px; */
+  background-image: url(../public/home-background.png);
+  /* height: 1070px; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  /* flex: 1; */
+  /* padding: 20px; */
+}
